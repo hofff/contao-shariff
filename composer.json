@@ -1,0 +1,38 @@
+{
+	"name": "hofff/contao-shariff",
+	"description": "Shariff integration for Contao CMS.",
+	"keywords": [
+		"share",
+		"facebook",
+		"twitter",
+		"contao",
+		"shariff"
+	],
+	"type": "contao-module",
+	"license": "LGPL-3.0+",
+	"authors": [
+		{
+			"name": "Oliver Hoff",
+			"email": "oliver@hofff.com",
+			"homepage": "http://hofff.com/",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.3",
+		"contao/core": "~3.2",
+		"heise/shariff": "~1.4"
+	},
+	"autoload" : {
+		"psr-0": {
+			"Hofff" : "src/"
+		}
+	},
+	"extra" : {
+		"contao" : {
+			"sources" : {
+				"contao-module" : "system/modules/hofff_shariff"
+			}
+		}
+	}
+}
