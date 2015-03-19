@@ -19,12 +19,14 @@ class ContentShariff extends \Module {
 			return $tpl->parse();
 		}
 
-		parent::generate();
+		$this->strTemplate = 'mod_hofff_shariff';
+
+		return parent::generate();
 	}
 
-	public function compile() {
+	protected function compile() {
 		$GLOBALS['TL_CSS']['shariff.css'] = 'system/modules/hofff_shariff/assets/css/shariff.min.css';
-		$GLOBALS['TL_JAVASCRIPT']['shariff.js'] = 'system/modules/hofff_shariff/assets/css/shariff.min.js';
+		$GLOBALS['TL_BODY']['shariff.js'] = '<script src="system/modules/hofff_shariff/assets/js/shariff.min.js"></script>';
 	}
 
 }
