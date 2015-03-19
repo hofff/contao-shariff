@@ -9,6 +9,7 @@ $GLOBALS['TL_LANG']['tl_module']['hofff_shariff_services_options'] = array(
 	'facebook' => 'Facebook',
 	'twitter' => 'Twitter',
 	'googleplus' => 'Google+',
+	'whatsapp' => 'WhatsApp',
 	'mail' => 'Mail',
 	'info' => 'Info',
 );
