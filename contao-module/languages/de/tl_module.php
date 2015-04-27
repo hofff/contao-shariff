@@ -33,3 +33,5 @@ $GLOBALS['TL_LANG']['tl_module']['hofff_shariff_theme_options'] = array(
 	'standard' => 'Standard',
 	'grey' => 'Grau',
 );
+$GLOBALS['TL_LANG']['tl_module']['hofff_shariff_share_count']
+	= array('Anzahl der Shares anzeigen', '');

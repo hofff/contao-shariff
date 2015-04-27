@@ -17,6 +17,8 @@ $GLOBALS['TL_BODY']['shariff.js'] = '<script src="system/modules/hofff_shariff/a
 <?php endif; ?>
     data-orientation="<?php echo specialchars($this->orientation); ?>"
     data-theme="<?php echo specialchars($this->theme); ?>"
+<?php if(strlen($this->backendURL)): ?>
     data-backend-url="<?php echo $this->backendURL; ?>"
+<?php endif; ?>
 ></div>
 <!-- indexer::continue -->

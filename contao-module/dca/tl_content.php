@@ -6,6 +6,7 @@ $GLOBALS['TL_DCA']['tl_content']['palettes']['hofff_shariff']
 	. ',hofff_shariff_title'
 	. ',hofff_shariff_referrer_track,hofff_shariff_twitter_via'
 	. ',hofff_shariff_orientation,hofff_shariff_theme'
+	. ',hofff_shariff_share_count'
 	. ';{protected_legend:hide},protected'
 	. ';{expert_legend:hide},guests,cssID,space'
 	. ';{invisible_legend:hide},invisible,start,stop';
@@ -94,4 +95,14 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['hofff_shariff_theme'] = array(
 		'tl_class'	=> 'w50',
 	),
 	'sql'		=> "varchar(255) NOT NULL default ''",
+);
+
+$GLOBALS['TL_DCA']['tl_content']['fields']['hofff_shariff_share_count'] = array(
+	'label'		=> &$GLOBALS['TL_LANG']['tl_content']['hofff_shariff_share_count'],
+	'exclude'	=> true,
+	'inputType'	=> 'checkbox',
+	'eval'		=> array(
+		'tl_class'	=> 'clr w50 cbx',
+	),
+	'sql'		=> "char(1) NOT NULL default ''",
 );

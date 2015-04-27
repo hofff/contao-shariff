@@ -23,7 +23,7 @@ class Shariff {
 	public function embed() {
 		$tpl = new \FrontendTemplate('hofff_shariff');
 		$tpl->setData($this->options);
-		$tpl->backendURL = $this->getBackendURL();
+		$tpl->backendURL = $this->options['share_count'] ? $this->getBackendURL() : null;
 		$tpl->url = $this->getURL();
 		return $tpl->parse();
 	}
