@@ -42,7 +42,10 @@ class Shariff {
 	}
 
 	public function isBackendRequested() {
-		return \Input::get('shariff') == 'counts' && \Input::get('url') == $this->getURL();
+		$url = $this->getURL();
+		$url = preg_replace('@(\\?|&)shariff=counts($|&)', '$2', $url, 1);
+		$url = preg_replace('@(\\?|&)url=[^&]*($|&)', '$2', $url, 1);
+		return \Input::get('shariff') == 'counts' && $url == \Input::get('url');
 	}
 
 	public function sendCountsIfBackendRequested() {
