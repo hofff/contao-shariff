@@ -1,25 +1,9 @@
-
-<!-- indexer::stop -->
 <div class="<?php echo $this->class; ?> block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
 
   <?php if ($this->headline): ?>
     <<?php echo $this->hl; ?>><?php echo $this->headline; ?></<?php echo $this->hl; ?>>
   <?php endif; ?>
 
-  <div class="shariff"
-      data-services="<?php echo specialchars(json_encode(deserialize($this->hofff_shariff_services, true))); ?>"
-<?php if(strlen($this->hofff_shariff_url)): ?>
-      data-url="<?php echo specialchars($this->hofff_shariff_url); ?>"
-<?php endif; ?>
-<?php if(strlen($this->hofff_shariff_referrer_track)): ?>
-      data-referrer-track="<?php echo specialchars($this->hofff_shariff_referrer_track); ?>"
-<?php endif; ?>
-<?php if(strlen($this->hofff_shariff_twitter_via)): ?>
-      data-twitter-via="<?php echo specialchars($this->hofff_shariff_twitter_via); ?>"
-<?php endif; ?>
-      data-orientation="<?php echo specialchars($this->hofff_shariff_orientation); ?>"
-      data-theme="<?php echo specialchars($this->hofff_shariff_theme); ?>"
-  ></div>
+  <?php echo $this->shariff->embed(); ?>
 
 </div>
-<!-- indexer::continue -->

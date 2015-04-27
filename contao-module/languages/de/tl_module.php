@@ -15,6 +15,8 @@ $GLOBALS['TL_LANG']['tl_module']['hofff_shariff_services_options'] = array(
 );
 $GLOBALS['TL_LANG']['tl_module']['hofff_shariff_url']
 	= array('URL', '');
+$GLOBALS['TL_LANG']['tl_module']['hofff_shariff_title']
+	= array('Share-Text', '');
 $GLOBALS['TL_LANG']['tl_module']['hofff_shariff_referrer_track']
 	= array('Referrer Track', '');
 $GLOBALS['TL_LANG']['tl_module']['hofff_shariff_twitter_via']

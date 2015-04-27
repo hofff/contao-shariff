@@ -3,6 +3,7 @@
 $GLOBALS['TL_DCA']['tl_content']['palettes']['hofff_shariff']
 	= '{type_legend},type,headline'
 	. ';{hofff_shariff_legend},hofff_shariff_services,hofff_shariff_url'
+	. ',hofff_shariff_title'
 	. ',hofff_shariff_referrer_track,hofff_shariff_twitter_via'
 	. ',hofff_shariff_orientation,hofff_shariff_theme'
 	. ';{protected_legend:hide},protected'
@@ -13,7 +14,14 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['hofff_shariff_services'] = array(
 	'label'		=> &$GLOBALS['TL_LANG']['tl_content']['hofff_shariff_services'],
 	'exclude'	=> true,
 	'inputType'	=> 'checkbox',
-	'options'	=> array('facebook', 'twitter', 'googleplus', 'whatsapp', 'mail', 'info'),
+	'options'	=> array(
+		'facebook',
+		'twitter',
+		'googleplus',
+		'whatsapp',
+// 		'mail',
+// 		'info',
+	),
 	'reference'	=> &$GLOBALS['TL_LANG']['tl_content']['hofff_shariff_services_options'],
 	'eval'		=> array(
 		'mandatory'	=> true,
@@ -32,6 +40,16 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['hofff_shariff_url'] = array(
 		'tl_class'	=> 'clr long',
 	),
 	'sql'		=> "varchar(1022) NOT NULL default ''",
+);
+
+$GLOBALS['TL_DCA']['tl_content']['fields']['hofff_shariff_title'] = array(
+	'label'		=> &$GLOBALS['TL_LANG']['tl_content']['hofff_shariff_title'],
+	'exclude'	=> true,
+	'inputType'	=> 'text',
+	'eval'		=> array(
+		'tl_class'	=> 'clr long',
+	),
+	'sql'		=> "varchar(255) NOT NULL default ''",
 );
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['hofff_shariff_referrer_track'] = array(

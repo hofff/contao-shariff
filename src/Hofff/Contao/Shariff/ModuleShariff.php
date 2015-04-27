@@ -2,7 +2,7 @@
 
 namespace Hofff\Contao\Shariff;
 
-class ContentShariff extends \Module {
+class ModuleShariff extends \Module {
 
 	public function __construct($element) {
 		parent::__construct($element);
@@ -19,14 +19,16 @@ class ContentShariff extends \Module {
 			return $tpl->parse();
 		}
 
+		$this->shariff = Shariff::createFromDBRow($this->arrData);
+		$this->shariff->sendCountsIfBackendRequested();
+
 		$this->strTemplate = 'mod_hofff_shariff';
 
 		return parent::generate();
 	}
 
 	protected function compile() {
-		$GLOBALS['TL_CSS']['shariff.css'] = 'system/modules/hofff_shariff/assets/css/shariff.min.css';
-		$GLOBALS['TL_BODY']['shariff.js'] = '<script src="system/modules/hofff_shariff/assets/js/shariff.min.js"></script>';
+		$this->Template->shariff = $this->shariff;
 	}
 
 }

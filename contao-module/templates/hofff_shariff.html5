@@ -1,0 +1,22 @@
+<?php
+$GLOBALS['TL_CSS']['shariff.css'] = 'system/modules/hofff_shariff/assets/css/shariff.min.css';
+$GLOBALS['TL_BODY']['shariff.js'] = '<script src="system/modules/hofff_shariff/assets/js/shariff.min.js"></script>';
+?>
+<!-- indexer::stop -->
+<div class="shariff"
+    data-services="<?php echo specialchars(json_encode(deserialize($this->services, true))); ?>"
+    data-url="<?php echo specialchars($this->url); ?>"
+<?php if(strlen($this->title)): ?>
+    data-title="<?php echo specialchars($this->title); ?>"
+<?php endif; ?>
+<?php if(strlen($this->referrer_track)): ?>
+    data-referrer-track="<?php echo specialchars($this->referrer_track); ?>"
+<?php endif; ?>
+<?php if(strlen($this->twitter_via)): ?>
+    data-twitter-via="<?php echo specialchars($this->twitter_via); ?>"
+<?php endif; ?>
+    data-orientation="<?php echo specialchars($this->orientation); ?>"
+    data-theme="<?php echo specialchars($this->theme); ?>"
+    data-backend-url="<?php echo $this->backendURL; ?>"
+></div>
+<!-- indexer::continue -->

@@ -16,6 +16,7 @@
  */
 TemplateLoader::addFiles(array
 (
+	'hofff_shariff'     => 'system/modules/hofff_shariff/templates',
 	'ce_hofff_shariff'  => 'system/modules/hofff_shariff/templates',
 	'mod_hofff_shariff' => 'system/modules/hofff_shariff/templates',
 ));
