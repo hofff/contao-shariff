@@ -29,9 +29,14 @@ class Shariff {
 	}
 
 	public function getURL() {
-		return isset($this->options['url']) && strlen($this->options['url'])
-			? $this->options['url']
-			: \Environment::get('base') . \Environment::get('request');
+		if(isset($this->options['url']) && strlen($this->options['url'])) {
+			return $this->options['url'];
+		}
+		$url = \Environment::get('base') . \Environment::get('request');
+		$url = preg_replace('@(\\?|&)shariff=counts($|&)@', '$1', $url, 1);
+		$url = preg_replace('@(\\?|&)url=[^&]*($|&)@', '$1', $url, 1);
+		$url = rtrim($url, '?');
+		return $url;
 	}
 
 	public function getBackendURL() {
@@ -42,10 +47,7 @@ class Shariff {
 	}
 
 	public function isBackendRequested() {
-		$url = $this->getURL();
-		$url = preg_replace('@(\\?|&)shariff=counts($|&)', '$2', $url, 1);
-		$url = preg_replace('@(\\?|&)url=[^&]*($|&)', '$2', $url, 1);
-		return \Input::get('shariff') == 'counts' && $url == \Input::get('url');
+		return \Input::get('shariff') == 'counts' && \Input::get('url') == $this->getURL();
 	}
 
 	public function sendCountsIfBackendRequested() {
