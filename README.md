@@ -1,32 +1,30 @@
-# Shariff - Social-Media-buttons with privacy
-----
+# Shariff – Social media buttons with privacy
 
-Contao CMS module and content element providing [Shariff] (https://github.com/heiseonline/shariff). More information about Shariff you will get on [heise online] (http://www.heise.de/ct/artikel/Shariff-Social-Media-Buttons-mit-Datenschutz-2467514.html).
+Contao CMS module and content element providing [Shariff] (https://github.com/heiseonline/shariff). For more information about Shariff, please refer to [heise online] (http://www.heise.de/ct/artikel/Shariff-Social-Media-Buttons-mit-Datenschutz-2467514.html).
 
+## Features
 
-## Functions
-
-providing sharing links for:
+Provides sharing links for:
 
 - Facebook
 - Twitter
 - Google+
 - WhatsApp
 
-You can choose your prefered service in the backend module or content element.
+You can choose your preferred service in the backend module or in the content element.
 
-**NOTE:** We don't provide email-sharing and the additional info-button with heise-link, because in our opinion it's not necessary this time. Maybe in the future! ;-)
+**NOTE:** For the time being, hofff/contao-shariff does not support email sharing or the info button that links to the heise website. We do not think this is necessary at the moment, but might include it in the future.
 
-###options
+## Options
 
-- choose a predefined sharing url
-- add a predefined sharing text instead of page title
-- add referrer track to url
+- Choose a predefined sharing URL
+- Add a predefined sharing text instead of page title
+- Add referrer track to URL
 - "Twitter via" integration
-- alignment: horizontal or vertical
-- color theme: standard or gray
-- optionally show number of shares
+- Alignment: horizontal or vertical
+- Color theme: standard or gray
+- Display number of shares
 
-##ATTENTION
+**IMPORTANT:**
 
-To use the Social-Media-icons in frontend you have to integrate Font Awesome. Just include the CSS from the Bootstrap CDN `//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css` (`<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">`) to your layout. You also have to include jQuery.
+To use the social media icons in the frontend, you will need to integrate Font Awesome. Just add the CSS from the Bootstrap CDN `//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css` (`<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">`) to your layout. You also have to include jQuery.
