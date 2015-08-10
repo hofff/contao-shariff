@@ -25,6 +25,7 @@ class BackendFactory {
 					'StumbleUpon',
 					'Flattr',
 					'Pinterest',
+					'Xing',
 				),
 			);
 
