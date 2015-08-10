@@ -10,6 +10,9 @@ Provides sharing links for:
 - Twitter
 - Google+
 - WhatsApp
+- Xing
+- LinkedIn
+- Pinterest
 
 You can choose your preferred service in the backend module or in the content element.
 
