@@ -5,14 +5,6 @@ $GLOBALS['TL_LANG']['tl_module']['hofff_shariff_legend']
 
 $GLOBALS['TL_LANG']['tl_module']['hofff_shariff_services']
 	= array('Services', 'Please choose which social media service or services you would like to display on your website.');
-$GLOBALS['TL_LANG']['tl_module']['hofff_shariff_services_options'] = array(
-	'facebook' => 'Facebook',
-	'twitter' => 'Twitter',
-	'googleplus' => 'Google+',
-	'whatsapp' => 'WhatsApp',
-	'mail' => 'Mail',
-	'info' => 'Info',
-);
 $GLOBALS['TL_LANG']['tl_module']['hofff_shariff_url']
 	= array('URL', 'Enter a fixed URL to be shared. Leave this field blank if you want to share the current page.');
 $GLOBALS['TL_LANG']['tl_module']['hofff_shariff_title']

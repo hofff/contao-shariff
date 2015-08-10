@@ -14,16 +14,9 @@ $GLOBALS['TL_DCA']['tl_content']['palettes']['hofff_shariff']
 $GLOBALS['TL_DCA']['tl_content']['fields']['hofff_shariff_services'] = array(
 	'label'		=> &$GLOBALS['TL_LANG']['tl_content']['hofff_shariff_services'],
 	'exclude'	=> true,
-	'inputType'	=> 'checkbox',
-	'options'	=> array(
-		'facebook',
-		'twitter',
-		'googleplus',
-		'whatsapp',
-// 		'mail',
-// 		'info',
-	),
-	'reference'	=> &$GLOBALS['TL_LANG']['tl_content']['hofff_shariff_services_options'],
+	'inputType'	=> 'checkboxWizard',
+	'options'	=> $GLOBALS['TL_CONFIG']['hofff_shariff_services'],
+	'reference'	=> &$GLOBALS['TL_LANG']['MSC']['hofff_shariff_services'],
 	'eval'		=> array(
 		'mandatory'	=> true,
 		'multiple'	=> true,
