@@ -13,6 +13,10 @@ $GLOBALS['TL_LANG']['tl_content']['hofff_shariff_referrer_track']
 	= array('Referrer Track', 'Der eingegebene String (z.B. für Tracking-Parameter) wird an die zu teilende URL angehangen.');
 $GLOBALS['TL_LANG']['tl_content']['hofff_shariff_twitter_via']
 	= array('Twitter via', 'Bitte tragen Sie einen "Twitter via" Text ein, welcher am Ende des Tweets angefügt wird.');
+$GLOBALS['TL_LANG']['tl_content']['hofff_shariff_mail_subject']
+	= array('Mail-Betreff', '<strong>##url##</strong> wird durch die Share-URL ersetzt.');
+$GLOBALS['TL_LANG']['tl_content']['hofff_shariff_mail_body']
+	= array('Mail-Inhalt', '<strong>##url##</strong> wird durch die Share-URL ersetzt.');
 $GLOBALS['TL_LANG']['tl_content']['hofff_shariff_orientation']
 	= array('Ausrichtung', 'Bitte wählen Sie die Ausrichtung der Buttons aus. Zur Auswahl steht horizontal (Buttons nebeneinander) oder vertikal (Buttons untereinander).');
 $GLOBALS['TL_LANG']['tl_content']['hofff_shariff_orientation_options'] = array(

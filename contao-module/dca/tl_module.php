@@ -5,6 +5,7 @@ $GLOBALS['TL_DCA']['tl_module']['palettes']['hofff_shariff']
 	. ';{hofff_shariff_legend},hofff_shariff_services,hofff_shariff_url'
 	. ',hofff_shariff_title'
 	. ',hofff_shariff_referrer_track,hofff_shariff_twitter_via'
+	. ',hofff_shariff_mail_subject,hofff_shariff_mail_body'
 	. ',hofff_shariff_orientation,hofff_shariff_theme'
 	. ',hofff_shariff_share_count'
 	. ';{protected_legend:hide},protected'
@@ -63,6 +64,28 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['hofff_shariff_twitter_via'] = array(
 		'tl_class'	=> 'w50',
 	),
 	'sql'		=> "varchar(255) NOT NULL default ''",
+);
+
+$GLOBALS['TL_DCA']['tl_module']['fields']['hofff_shariff_mail_subject'] = array(
+	'label'		=> &$GLOBALS['TL_LANG']['tl_module']['hofff_shariff_mail_subject'],
+	'exclude'	=> true,
+	'inputType'	=> 'text',
+	'eval'		=> array(
+		'decodeEntities'=> true,
+		'tl_class'	=> 'clr long',
+	),
+	'sql'		=> "varchar(255) NOT NULL default ''",
+);
+
+$GLOBALS['TL_DCA']['tl_module']['fields']['hofff_shariff_mail_body'] = array(
+	'label'		=> &$GLOBALS['TL_LANG']['tl_module']['hofff_shariff_mail_body'],
+	'exclude'	=> true,
+	'inputType'	=> 'textarea',
+	'eval'		=> array(
+		'decodeEntities'=> true,
+		'tl_class'	=> 'clr',
+	),
+	'sql'		=> "text NULL",
 );
 
 $GLOBALS['TL_DCA']['tl_module']['fields']['hofff_shariff_orientation'] = array(

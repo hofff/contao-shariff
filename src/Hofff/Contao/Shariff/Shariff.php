@@ -23,9 +23,20 @@ class Shariff {
 	public function embed() {
 		$tpl = new \FrontendTemplate('hofff_shariff');
 		$tpl->setData($this->options);
-		$tpl->backendURL = $this->options['share_count'] ? $this->getBackendURL() : null;
+		$tpl->backend_url = $this->options['share_count'] ? $this->getBackendURL() : null;
 		$tpl->url = $this->getURL();
+		$tpl->mail_subject = $this->replaceTokens($this->options['mail_subject']);
+		$tpl->mail_body = $this->replaceTokens($this->options['mail_body']);
 		return $tpl->parse();
+	}
+
+	public function replaceTokens($content) {
+		$tokens = array();
+		$tokens['##url##'] = $this->getURL();
+
+		$content = str_replace(array_keys($tokens), array_values($tokens), $content);
+
+		return $content;
 	}
 
 	public function getURL() {
