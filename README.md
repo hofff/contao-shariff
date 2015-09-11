@@ -10,9 +10,10 @@ Provides sharing links for:
 - Twitter
 - Google+
 - WhatsApp
-- Xing
 - LinkedIn
+- Xing
 - Pinterest
+- Email (via mailto:)
 
 You can choose your preferred service in the backend module or in the content element.
 
@@ -24,10 +25,14 @@ You can choose your preferred service in the backend module or in the content el
 - Add a predefined sharing text instead of page title
 - Add referrer track to URL
 - "Twitter via" integration
+- add an email subject
+- add an email text
 - Alignment: horizontal or vertical
 - Color theme: standard or gray
 - Display number of shares
 
 **IMPORTANT:**
 
-To use the social media icons in the frontend, you will need to integrate Font Awesome. Just add the CSS from the Bootstrap CDN `//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css` (`<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">`) to your layout. You also have to include jQuery.
+To use the social media icons in the frontend, you will need to integrate Font Awesome. Just add the CSS from the Bootstrap CDN `//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css` (`<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">`) to your layout. You also have to include jQuery.
+
+For now the installation is just possible via composer. A manual installation will not be working because the requirements will not be resolved.
