@@ -13,6 +13,10 @@ $GLOBALS['TL_LANG']['tl_module']['hofff_shariff_referrer_track']
 	= array('Referrer Track', 'The entered string (e.g. tracking parameter) will be appended to the sharing url.');
 $GLOBALS['TL_LANG']['tl_module']['hofff_shariff_twitter_via']
 	= array('Twitter via', 'Please enter a "Twitter via" text which will be added at the end of the tweet.');
+$GLOBALS['TL_LANG']['tl_content']['hofff_shariff_mail_subject']
+	= array('Mail-Betreff', 'The entered text will be used as subject for the email. <strong>##url##</strong> will be replaced by the shared url.');
+$GLOBALS['TL_LANG']['tl_content']['hofff_shariff_mail_body']
+	= array('Mail-Inhalt', 'Please fill out an email text, which will be used if share by email. <strong>##url##</strong> will be replaced by the shared url.');
 $GLOBALS['TL_LANG']['tl_module']['hofff_shariff_orientation']
 	= array('Alignment', 'Please choose how you would like to align the buttons. The choices are horizontal (buttons side by side) or vertical (buttons one below the other).');
 $GLOBALS['TL_LANG']['tl_module']['hofff_shariff_orientation_options'] = array(
