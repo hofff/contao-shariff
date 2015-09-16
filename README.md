@@ -17,11 +17,11 @@ Provides sharing links for:
 
 You can choose your preferred service in the backend module or in the content element.
 
-**NOTE:** For the time being, hofff/contao-shariff does not support email sharing or the info button that links to the heise website. We do not think this is necessary at the moment, but might include it in the future.
+**NOTE:** For the time being, hofff/contao-shariff does not support the info button that links to the heise website. We do not think this is necessary at the moment, but might include it in the future.
 
 ## Options
 
-- Choose a predefined sharing URL
+- Choose a predefined or use the current URL for sharing
 - Add a predefined sharing text instead of page title
 - Add referrer track to URL
 - "Twitter via" integration
