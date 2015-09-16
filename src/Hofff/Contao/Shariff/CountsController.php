@@ -23,11 +23,9 @@ class CountsController {
 			return false;
 		}
 
-		$verify = \Input::get('p');
-		$verify = strtr($verify, '-_', '+/') . str_repeat('=', max(0, strlen($verify) % 4 - 1));
-		$verify = \Encryption::decrypt($verify);
+		$hash = hash('sha256', \Config::get('encryptionKey') . \Input::get('url') . \Config::get('encryptionKey'));
 
-		return \Input::get('url') == $verify;
+		return $hash == \Input::get('h');
 	}
 
 	public function getShareCounts($url) {

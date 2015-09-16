@@ -48,7 +48,7 @@ class Shariff {
 
 	public function getBackendURL() {
 		$url = \Environment::get('base') . 'system/modules/hofff_shariff/endpoints/counts.php';
-		$url .= '?p=' . rtrim(strtr(\Encryption::encrypt($this->getURL()), '+/', '-_'), '=');
+		$url .= '?h=' . hash('sha256', \Config::get('encryptionKey') . $this->getURL() . \Config::get('encryptionKey'));
 		return $url;
 	}
 
