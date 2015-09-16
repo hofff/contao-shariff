@@ -43,39 +43,13 @@ class Shariff {
 		if(isset($this->options['url']) && strlen($this->options['url'])) {
 			return $this->options['url'];
 		}
-		$url = \Environment::get('base') . \Environment::get('request');
-		$url = preg_replace('@(\\?|&)shariff=counts($|&)@', '$1', $url, 1);
-		$url = preg_replace('@(\\?|&)url=[^&]*($|&)@', '$1', $url, 1);
-		$url = rtrim($url, '?');
-		return $url;
+		return \Environment::get('base') . \Environment::get('request');
 	}
 
 	public function getBackendURL() {
-		$url = \Environment::get('base') . \Environment::get('request');
-		$url .= false === strpos($url, '?') ? '?' : '&';
-		$url .= 'shariff=counts';
+		$url = \Environment::get('base') . 'system/modules/hofff_shariff/endpoints/counts.php';
+		$url .= '?p=' . rtrim(strtr(\Encryption::encrypt($this->getURL()), '+/', '-_'), '=');
 		return $url;
-	}
-
-	public function isBackendRequested() {
-		return \Input::get('shariff') == 'counts' && \Input::get('url') == $this->getURL();
-	}
-
-	public function sendCountsIfBackendRequested() {
-		if($this->isBackendRequested()) {
-			$this->sendCounts();
-		}
-	}
-
-	public function sendCounts() {
-		while(ob_end_clean());
-		header('Content-Type: application/json');
-		echo json_encode($this->getShareCounts());
-		exit;
-	}
-
-	public function getShareCounts() {
-		return BackendFactory::getBackend()->get($this->getURL());
 	}
 
 }

@@ -19,16 +19,13 @@ class ModuleShariff extends \Module {
 			return $tpl->parse();
 		}
 
-		$this->shariff = Shariff::createFromDBRow($this->arrData);
-		$this->shariff->sendCountsIfBackendRequested();
-
 		$this->strTemplate = 'mod_hofff_shariff';
 
 		return parent::generate();
 	}
 
 	protected function compile() {
-		$this->Template->shariff = $this->shariff;
+		$this->Template->shariff = Shariff::createFromDBRow($this->arrData);
 	}
 
 }
