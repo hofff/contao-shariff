@@ -10,6 +10,7 @@
 	],
 	"type" : "contao-module",
 	"license" : "LGPL-3.0+",
+	"homepage" : "https://hofff.com",
 	"authors" : [{
 			"name" : "Oliver Hoff",
 			"email" : "oliver@hofff.com",
