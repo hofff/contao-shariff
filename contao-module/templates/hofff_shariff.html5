@@ -4,28 +4,38 @@ $GLOBALS['TL_BODY']['shariff.js'] = '<script src="system/modules/hofff_shariff/a
 ?>
 <!-- indexer::stop -->
 <div class="shariff"
-    data-services="<?php echo specialchars(json_encode(deserialize($this->services, true))); ?>"
-    data-url="<?php echo specialchars($this->url); ?>"
+    data-services="<?= specialchars(json_encode(deserialize($this->services, true))) ?>"
+    data-url="<?= specialchars($this->url) ?>"
+    data-lang="<?= $GLOBALS['objPage']->rootLanguage ?>"
 <?php if(strlen($this->title)): ?>
-    data-title="<?php echo specialchars($this->title); ?>"
+    data-title="<?= specialchars($this->title) ?>"
 <?php endif; ?>
 <?php if(strlen($this->referrer_track)): ?>
-    data-referrer-track="<?php echo specialchars($this->referrer_track); ?>"
+    data-referrer-track="<?= specialchars($this->referrer_track) ?>"
 <?php endif; ?>
 <?php if(strlen($this->twitter_via)): ?>
-    data-twitter-via="<?php echo specialchars($this->twitter_via); ?>"
+    data-twitter-via="<?= specialchars($this->twitter_via) ?>"
 <?php endif; ?>
     data-mail-url="mailto:"
 <?php if(strlen($this->mail_subject)): ?>
-    data-mail-subject="<?php echo specialchars($this->mail_subject); ?>"
+    data-mail-subject="<?= specialchars($this->mail_subject) ?>"
 <?php endif; ?>
 <?php if(strlen($this->mail_body)): ?>
-    data-mail-body="<?php echo specialchars($this->mail_body); ?>"
+    data-mail-body="<?= specialchars($this->mail_body) ?>"
 <?php endif; ?>
-    data-orientation="<?php echo specialchars($this->orientation); ?>"
-    data-theme="<?php echo specialchars($this->theme); ?>"
+<?php if(strlen($this->flattr_user)): ?>
+    data-flattr-user="<?= specialchars($this->flattr_user) ?>"
+<?php endif; ?>
+<?php if(strlen($this->flattr_category)): ?>
+    data-flattr-category="<?= specialchars($this->flattr_category) ?>"
+<?php endif; ?>
+<?php if(strlen($this->media_url)): ?>
+    data-media-url="<?= specialchars($this->media_url) ?>"
+<?php endif; ?>
+    data-orientation="<?= specialchars($this->orientation) ?>"
+    data-theme="<?= specialchars($this->theme) ?>"
 <?php if(strlen($this->backend_url)): ?>
-    data-backend-url="<?php echo $this->backend_url; ?>"
+    data-backend-url="<?= $this->backend_url ?>"
 <?php endif; ?>
 ></div>
 <!-- indexer::continue -->

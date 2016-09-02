@@ -17,14 +17,14 @@ class BackendFactory {
 					'cacheDir'	=> TL_ROOT . '/system/tmp',
 				),
 				'services' => array(
+					'AddThis',
 					'Facebook',
+					'Flattr',
 					'GooglePlus',
-					'Twitter',
 					'LinkedIn',
+					'Pinterest',
 					'Reddit',
 					'StumbleUpon',
-					'Flattr',
-					'Pinterest',
 					'Xing',
 				),
 			);
