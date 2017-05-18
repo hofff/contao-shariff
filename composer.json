@@ -21,7 +21,7 @@
 	],
 	"require": {
 		"php": "^5.6 || ^7.0",
-		"contao/core": "^3.5",
+		"contao/core": "^4.3",
 		"heise/shariff": "^6.0"
 	},
 	"autoload": {
