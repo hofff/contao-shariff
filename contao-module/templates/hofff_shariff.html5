@@ -1,6 +1,6 @@
 <?php
 $GLOBALS['TL_CSS']['shariff.css'] = 'system/modules/hofff_shariff/assets/css/shariff.min.css';
-$GLOBALS['TL_BODY']['shariff.js'] = '<script src="system/modules/hofff_shariff/assets/js/shariff.min.js"></script>';
+$GLOBALS['TL_BODY']['shariff.js'] = '<!--[if ! lte IE 8]><!--><script src="system/modules/hofff_shariff/assets/js/shariff.min.js"></script><!--<![endif]-->';
 ?>
 <!-- indexer::stop -->
 <div class="shariff"
