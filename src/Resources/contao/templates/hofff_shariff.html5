@@ -1,0 +1,43 @@
+<?php
+
+$GLOBALS['TL_CSS']['shariff.css'] = 'bundles/hofffcontaoshariff/css/shariff.min.css';
+$GLOBALS['TL_BODY']['shariff.js'] = '<script src="bundles/hofffcontaoshariff/js/shariff.min.js"></script>';
+
+?>
+<!-- indexer::stop -->
+<div class="shariff"
+    data-services="<?= \Contao\StringUtil::specialchars(json_encode(deserialize($this->services, true))) ?>"
+    data-url="<?= \Contao\StringUtil::specialchars($this->url) ?>"
+    data-lang="<?= $GLOBALS['objPage']->rootLanguage ?>"
+<?php if(strlen($this->title)): ?>
+    data-title="<?= \Contao\StringUtil::specialchars($this->title) ?>"
+<?php endif; ?>
+<?php if(strlen($this->referrer_track)): ?>
+    data-referrer-track="<?= \Contao\StringUtil::specialchars($this->referrer_track) ?>"
+<?php endif; ?>
+<?php if(strlen($this->twitter_via)): ?>
+    data-twitter-via="<?= \Contao\StringUtil::specialchars($this->twitter_via) ?>"
+<?php endif; ?>
+    data-mail-url="mailto:"
+<?php if(strlen($this->mail_subject)): ?>
+    data-mail-subject="<?= \Contao\StringUtil::specialchars($this->mail_subject) ?>"
+<?php endif; ?>
+<?php if(strlen($this->mail_body)): ?>
+    data-mail-body="<?= \Contao\StringUtil::specialchars($this->mail_body) ?>"
+<?php endif; ?>
+<?php if(strlen($this->flattr_user)): ?>
+    data-flattr-user="<?= \Contao\StringUtil::specialchars($this->flattr_user) ?>"
+<?php endif; ?>
+<?php if(strlen($this->flattr_category)): ?>
+    data-flattr-category="<?= \Contao\StringUtil::specialchars($this->flattr_category) ?>"
+<?php endif; ?>
+<?php if(strlen($this->media_url)): ?>
+    data-media-url="<?= \Contao\StringUtil::specialchars($this->media_url) ?>"
+<?php endif; ?>
+    data-orientation="<?= \Contao\StringUtil::specialchars($this->orientation) ?>"
+    data-theme="<?= \Contao\StringUtil::specialchars($this->theme) ?>"
+<?php if(strlen($this->backend_url)): ?>
+    data-backend-url="<?= $this->backend_url ?>"
+<?php endif; ?>
+></div>
+<!-- indexer::continue -->

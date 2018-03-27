@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+  <services>
+    <defaults public="false" />
+
+    <service id="hofff.contao.shariff.action.share_counts" class="Hofff\Contao\Shariff\Action\ShareCountsAction" public="true">
+      <argument type="service" id="hofff.contao.shariff.backend_factory" />
+      <argument type="service" id="uri_signer" />
+    </service>
+
+    <service id="hofff.contao.shariff.backend_factory" class="Hofff\Contao\Shariff\BackendFactory">
+      <argument>%kernel.cache_dir%</argument>
+      <argument type="service" id="logger" on-invalid="null" />
+    </service>
+    <service id="Hofff\Contao\Shariff\BackendFactory" alias="hofff.contao.shariff.backend_factory" />
+
+    <service id="hofff.contao.shariff.shariff_renderer" class="Hofff\Contao\Shariff\ShariffRenderer">
+      <argument type="service" id="request_stack" />
+      <argument type="service" id="router" />
+      <argument type="service" id="uri_signer" />
+    </service>
+    <!-- TODO make private when Contao allows correct service injection -->
+    <service id="Hofff\Contao\Shariff\ShariffRenderer" alias="hofff.contao.shariff.shariff_renderer" public="true" />
+
+  </services>
+
+</container>
