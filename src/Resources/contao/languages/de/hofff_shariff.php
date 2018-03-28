@@ -1,24 +1,28 @@
 <?php
 
-$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['addthis']       = 'AddThis';
-$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['diaspora']      = 'diaspora*';
-$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['facebook']      = 'Facebook';
-$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['flattr']        = 'Flattr';
-$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['googleplus']    = 'Google+';
-$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['info']          = 'Info';
-$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['linkedin']      = 'LinkedIn';
-$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['mail']          = 'E-Mail';
-$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['pinterest']     = 'Pinterest';
-$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['qzone']         = 'Qzone';
-$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['reddit']        = 'reddit';
-$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['stumbleupon']   = 'StumbleUpon';
-$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['tencent-weibo'] = 'Tencent Weibo';
-$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['threema']       = 'Threema';
-$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['tumblr']        = 'Tumblr';
-$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['twitter']       = 'Twitter';
-$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['weibo']         = 'Weibo';
-$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['whatsapp']      = 'WhatsApp';
-$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['xing']          = 'Xing';
+$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['addthis']     = 'AddThis';
+$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['diaspora']    = 'diaspora*';
+$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['facebook']    = 'Facebook';
+$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['flattr']      = 'Flattr';
+$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['flipboard']   = 'Flipboard';
+$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['googleplus']  = 'Google+';
+$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['info']        = 'Info';
+$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['linkedin']    = 'LinkedIn';
+$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['mail']        = 'E-Mail';
+$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['pinterest']   = 'Pinterest';
+$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['print']       = 'Drucken';
+$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['qzone']       = 'Qzone';
+$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['reddit']      = 'reddit';
+$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['stumbleupon'] = 'StumbleUpon';
+$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['telegram']    = 'Telegram';
+$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['tencent']     = 'Tencent Weibo';
+$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['threema']     = 'Threema';
+$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['tumblr']      = 'Tumblr';
+$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['twitter']     = 'Twitter';
+$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['vk']          = 'VK';
+$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['weibo']       = 'Weibo';
+$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['whatsapp']    = 'WhatsApp';
+$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['xing']        = 'Xing';
 
 $GLOBALS['TL_LANG']['hofff_shariff']['theme_options']['standard'] = 'Standard';
 $GLOBALS['TL_LANG']['hofff_shariff']['theme_options']['grey']     = 'Grau';

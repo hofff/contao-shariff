@@ -40,7 +40,7 @@ class ModuleShariff extends Module
         /** @var ShariffRenderer $renderer */
         $renderer = System::getContainer()->get(ShariffRenderer::class);
         $params = Util::prepareRendererParamsFromDatabaseRow($this->arrData);
-        $rootPageId = $GLOBALS['objPage']->rootId;
+        $rootPageId = (int) $GLOBALS['objPage']->rootId;
 
         $this->Template->shariff = $renderer->render($params, $rootPageId);
     }

@@ -38,8 +38,14 @@ class ShareCountsAction
         }
 
         $pageId = (int) $request->query->get(self::KEY_PAGE);
+        try {
+            $backend = $this->factory->createBackend($pageId);
+        } catch(\RuntimeException $e) {
+            throw new BadRequestHttpException($e->getMessage(), $e->getCode(), $e);
+        }
+
         $url = $request->query->get(self::KEY_URL);
-        $counts = $this->factory->createBackend($pageId)->get($url);
+        $counts = $backend->get($url);
 
         return new JsonResponse($counts);
     }

@@ -67,8 +67,8 @@ class ShariffRenderer
     {
         $url = $this->urlGenerator->generate(ShareCountsAction::class, [
             ShareCountsAction::KEY_PAGE => $pageId,
-            ShareCountsAction::KEY_URL => $this->getShareUrl($params),
-        ]);
+            ShareCountsAction::KEY_URL => $this->generateShareUrl($params),
+        ], UrlGeneratorInterface::ABSOLUTE_URL);
 
         return $this->uriSigner->sign($url);
     }

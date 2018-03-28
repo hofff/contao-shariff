@@ -5,13 +5,16 @@
   <services>
     <defaults public="false" />
 
-    <service id="hofff.contao.shariff.action.share_counts" class="Hofff\Contao\Shariff\Action\ShareCountsAction" public="true">
+    <service id="hofff.contao.shariff.action.share_counts" class="Hofff\Contao\Shariff\Action\ShareCountsAction">
       <argument type="service" id="hofff.contao.shariff.backend_factory" />
       <argument type="service" id="uri_signer" />
+      <tag name="controller.service_arguments" />
     </service>
+    <service id="Hofff\Contao\Shariff\Action\ShareCountsAction" alias="hofff.contao.shariff.action.share_counts" public="true" />
 
     <service id="hofff.contao.shariff.backend_factory" class="Hofff\Contao\Shariff\BackendFactory">
       <argument>%kernel.cache_dir%</argument>
+      <argument type="service" id="contao.framework" />
       <argument type="service" id="logger" on-invalid="null" />
     </service>
     <service id="Hofff\Contao\Shariff\BackendFactory" alias="hofff.contao.shariff.backend_factory" />

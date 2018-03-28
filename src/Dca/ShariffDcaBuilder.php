@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Hofff\Contao\Shariff\Dca;
 
 use Contao\Controller;
+use Contao\System;
 
 class ShariffDcaBuilder
 {
@@ -13,6 +14,7 @@ class ShariffDcaBuilder
 
     public function __construct()
     {
+        System::loadLanguageFile('hofff_shariff');
         Controller::loadDataContainer('hofff_shariff');
         $this->dcaTemplate = $GLOBALS['TL_DCA']['hofff_shariff'];
     }
