@@ -25,7 +25,8 @@ class ShareCountsAction
     /** @var UriSigner */
     private $uriSigner;
 
-    public function __construct(BackendFactory $factory, UriSigner $uriSigner) {
+    public function __construct(BackendFactory $factory, UriSigner $uriSigner)
+    {
         $this->factory = $factory;
         $this->uriSigner = $uriSigner;
     }
