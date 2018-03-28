@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Hofff\Contao\Shariff\Action;
 
 use Hofff\Contao\Shariff\BackendFactory;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration as FEB;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\UriSigner;

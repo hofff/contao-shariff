@@ -6,6 +6,6 @@ namespace Hofff\Contao\Shariff;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class HofffShariffBundle extends Bundle
+class HofffContaoShariffBundle extends Bundle
 {
 }

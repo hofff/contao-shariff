@@ -9,6 +9,7 @@ use Hofff\Contao\Shariff\Action\ShareCountsAction;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\HttpKernel\UriSigner;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
+use Contao\PageModel;
 
 class ShariffRenderer
 {
@@ -28,25 +29,27 @@ class ShariffRenderer
         $this->uriSigner = $uriSigner;
     }
 
-    public function render(array $params): string
+    public function render(array $params, int $rootPageId): string
     {
         $tpl = new FrontendTemplate('hofff_shariff');
         $tpl->setData($params);
 
-        $tpl->backend_url = $params['share_count'] ? $this->generateShareCountsUrl() : null;
-        $tpl->url = $this->generateShareUrl();
-        $tpl->mail_subject = $this->replaceTokens($params['mail_subject']);
-        $tpl->mail_body = $this->replaceTokens($params['mail_body']);
+        $tpl->backend_url = $params['button_style'] !== 'icon' && PageModel::findByPk($rootPageId)->hofff_shariff_share_counts
+            ? $this->generateShareCountsUrl($rootPageId, $params)
+            : null;
+        $tpl->url = $this->generateShareUrl($params);
+        $tpl->mail_subject = $this->replaceTokens($params['mail_subject'], $params);
+        $tpl->mail_body = $this->replaceTokens($params['mail_body'], $params);
 
         return $tpl->parse();
     }
 
-    private function replaceTokens(string $content, array $params): string
+    private function replaceTokens(?string $content, array $params): string
     {
         $tokens = [];
         $tokens['##url##'] = $this->generateShareUrl($params);
 
-        $content = str_replace(array_keys($tokens), array_values($tokens), $content);
+        $content = str_replace(array_keys($tokens), array_values($tokens), (string) $content);
 
         return $content;
     }

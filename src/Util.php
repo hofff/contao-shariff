@@ -6,7 +6,7 @@ namespace Hofff\Contao\Shariff;
 
 class Util
 {
-    public static function prepareRendererParamsFromDatabaseRow(array $row): self
+    public static function prepareRendererParamsFromDatabaseRow(array $row): array
     {
         $params = [];
 

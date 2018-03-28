@@ -20,12 +20,16 @@ $GLOBALS['TL_LANG']['hofff_shariff']['service_options']['weibo']         = 'Weib
 $GLOBALS['TL_LANG']['hofff_shariff']['service_options']['whatsapp']      = 'WhatsApp';
 $GLOBALS['TL_LANG']['hofff_shariff']['service_options']['xing']          = 'Xing';
 
-$GLOBALS['TL_LANG']['hofff_shariff']['orientation_options']['horizontal'] = 'Horizontal';
-$GLOBALS['TL_LANG']['hofff_shariff']['orientation_options']['vertical']   = 'Vertikal';
-
 $GLOBALS['TL_LANG']['hofff_shariff']['theme_options']['standard'] = 'Standard';
 $GLOBALS['TL_LANG']['hofff_shariff']['theme_options']['grey']     = 'Grau';
 $GLOBALS['TL_LANG']['hofff_shariff']['theme_options']['white']    = 'Weiß';
+
+$GLOBALS['TL_LANG']['hofff_shariff']['orientation_options']['horizontal'] = 'Horizontal';
+$GLOBALS['TL_LANG']['hofff_shariff']['orientation_options']['vertical']   = 'Vertikal';
+
+$GLOBALS['TL_LANG']['hofff_shariff']['button_style_options']['standard']   = 'Standard (Icon/Text/Shares)';
+$GLOBALS['TL_LANG']['hofff_shariff']['button_style_options']['icon-count'] = 'Icon/Shares';
+$GLOBALS['TL_LANG']['hofff_shariff']['button_style_options']['icon']       = 'Icon';
 
 
 $GLOBALS['TL_LANG']['hofff_shariff']['legend']
@@ -60,6 +64,11 @@ $GLOBALS['TL_LANG']['hofff_shariff']['orientation'][0]
 $GLOBALS['TL_LANG']['hofff_shariff']['orientation'][1]
     = 'Bitte wählen Sie die Ausrichtung der Buttons aus. Zur Auswahl steht horizontal (Buttons nebeneinander) oder vertikal (Buttons untereinander).';
 
+$GLOBALS['TL_LANG']['hofff_shariff']['button_style'][0]
+    = 'Button-Stil';
+$GLOBALS['TL_LANG']['hofff_shariff']['button_style'][1]
+    = 'Bitte wählen Sie die Stil der Buttons aus.';
+
 $GLOBALS['TL_LANG']['hofff_shariff']['theme'][0]
     = 'Farbschema';
 $GLOBALS['TL_LANG']['hofff_shariff']['theme'][1]
@@ -69,11 +78,6 @@ $GLOBALS['TL_LANG']['hofff_shariff']['referrer_track'][0]
     = 'Referrer Track';
 $GLOBALS['TL_LANG']['hofff_shariff']['referrer_track'][1]
     = 'Der eingegebene String (z.B. für Tracking-Parameter) wird an die zu teilende URL angehangen.';
-
-$GLOBALS['TL_LANG']['hofff_shariff']['share_count'][0]
-    = 'Anzahl der Shares anzeigen';
-$GLOBALS['TL_LANG']['hofff_shariff']['share_count'][1]
-    = 'Bitte aktivieren Sie diese Funktion, wenn die Anzahl der Shares pro Service angezeigt werden soll.';
 
 $GLOBALS['TL_LANG']['hofff_shariff']['flattr_user'][0]
     = 'Benutzer';

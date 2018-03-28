@@ -17,7 +17,7 @@ class ShariffDcaBuilder
         $this->dcaTemplate = $GLOBALS['TL_DCA']['hofff_shariff'];
     }
 
-    public function build(array &$dca): void
+    public function build(array $dca): array
     {
         $dca['palettes']['hofff_shariff']
             = '{type_legend},type,headline'
@@ -30,5 +30,7 @@ class ShariffDcaBuilder
             $dca['fields'],
             $this->dcaTemplate['fields']
         );
+
+        return $dca;
     }
 }

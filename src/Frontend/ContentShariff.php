@@ -40,7 +40,8 @@ class ContentShariff extends ContentElement
         /** @var ShariffRenderer $renderer */
         $renderer = System::getContainer()->get(ShariffRenderer::class);
         $params = Util::prepareRendererParamsFromDatabaseRow($this->arrData);
+        $rootPageId = $GLOBALS['objPage']->rootId;
 
-        $this->Template->shariff = $renderer->render($params);
+        $this->Template->shariff = $renderer->render($params, $rootPageId);
     }
 }

@@ -9,6 +9,6 @@
     <<?= $this->hl ?>><?= $this->headline ?></<?= $this->hl ?>>
   <?php endif; ?>
 
-  <?= $this->shariff->embed() ?>
+  <?= $this->shariff ?>
 
 </div>

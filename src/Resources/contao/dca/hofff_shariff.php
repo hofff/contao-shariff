@@ -3,8 +3,8 @@
 $GLOBALS['TL_DCA']['hofff_shariff'] = call_user_func(function(array $dca) {
     $dca['palettes']['hofff_shariff'] = ';{hofff_shariff_legend},hofff_shariff_services'
         . ',hofff_shariff_url,hofff_shariff_title'
-        . ',hofff_shariff_orientation,hofff_shariff_theme'
-        . ',hofff_shariff_referrer_track,hofff_shariff_share_count'
+        . ',hofff_shariff_button_style,hofff_shariff_orientation'
+        . ',hofff_shariff_theme,hofff_shariff_referrer_track'
         . ';{hofff_shariff_flattr_legend},hofff_shariff_flattr_user,hofff_shariff_flattr_category'
         . ';{hofff_shariff_mail_legend},hofff_shariff_mail_subject,hofff_shariff_mail_body'
         . ';{hofff_shariff_pinterest_legend},hofff_shariff_media_url'
@@ -44,6 +44,18 @@ $GLOBALS['TL_DCA']['hofff_shariff'] = call_user_func(function(array $dca) {
         'sql'       => 'varchar(255) NOT NULL default \'\'',
     ];
 
+    $dca['fields']['hofff_shariff_button_style'] = [
+        'label'     => &$GLOBALS['TL_LANG']['hofff_shariff']['button_style'],
+        'exclude'   => true,
+        'inputType' => 'select',
+        'options'   => ['standard', 'icon', 'icon-count'],
+        'reference' => &$GLOBALS['TL_LANG']['hofff_shariff']['button_style_options'],
+        'eval'      => [
+            'tl_class' => 'clr w50',
+        ],
+        'sql'       => 'varchar(255) NOT NULL default \'\'',
+    ];
+
     $dca['fields']['hofff_shariff_orientation'] = [
         'label'     => &$GLOBALS['TL_LANG']['hofff_shariff']['orientation'],
         'exclude'   => true,
@@ -51,7 +63,7 @@ $GLOBALS['TL_DCA']['hofff_shariff'] = call_user_func(function(array $dca) {
         'options'   => ['horizontal', 'vertical'],
         'reference' => &$GLOBALS['TL_LANG']['hofff_shariff']['orientation_options'],
         'eval'      => [
-            'tl_class' => 'clr w50',
+            'tl_class' => 'w50',
         ],
         'sql'       => 'varchar(255) NOT NULL default \'\'',
     ];
@@ -63,7 +75,7 @@ $GLOBALS['TL_DCA']['hofff_shariff'] = call_user_func(function(array $dca) {
         'options'   => ['standard', 'grey', 'white'],
         'reference' => &$GLOBALS['TL_LANG']['hofff_shariff']['theme_options'],
         'eval'      => [
-            'tl_class' => 'w50',
+            'tl_class' => 'clr w50',
         ],
         'sql'       => 'varchar(255) NOT NULL default \'\'',
     ];
@@ -73,19 +85,9 @@ $GLOBALS['TL_DCA']['hofff_shariff'] = call_user_func(function(array $dca) {
         'exclude'   => true,
         'inputType' => 'text',
         'eval'      => [
-            'tl_class' => 'clr w50',
+            'tl_class' => 'w50',
         ],
         'sql'       => 'varchar(255) NOT NULL default \'\'',
-    ];
-
-    $dca['fields']['hofff_shariff_share_count'] = [
-        'label'     => &$GLOBALS['TL_LANG']['hofff_shariff']['share_count'],
-        'exclude'   => true,
-        'inputType' => 'checkbox',
-        'eval'      => [
-            'tl_class' => 'w50 cbx m12',
-        ],
-        'sql'       => 'char(1) NOT NULL default \'\'',
     ];
 
     $dca['fields']['hofff_shariff_flattr_user'] = [

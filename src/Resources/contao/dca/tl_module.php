@@ -1,6 +1,8 @@
 <?php
 
-call_user_func(function() {
+$GLOBALS['TL_DCA']['tl_module'] = call_user_func(function(array $dca) {
     $builder = new \Hofff\Contao\Shariff\Dca\ShariffDcaBuilder();
-    $builder->build($GLOBALS['TL_DCA']['tl_module']);
-});
+    $dca = $builder->build($dca);
+
+    return $dca;
+}, $GLOBALS['TL_DCA']['tl_module'] ?? []);

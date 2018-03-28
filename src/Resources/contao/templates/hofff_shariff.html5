@@ -34,6 +34,7 @@ $GLOBALS['TL_BODY']['shariff.js'] = '<script src="bundles/hofffcontaoshariff/js/
 <?php if(strlen($this->media_url)): ?>
     data-media-url="<?= \Contao\StringUtil::specialchars($this->media_url) ?>"
 <?php endif; ?>
+    data-button-style="<?= \Contao\StringUtil::specialchars($this->button_style) ?>"
     data-orientation="<?= \Contao\StringUtil::specialchars($this->orientation) ?>"
     data-theme="<?= \Contao\StringUtil::specialchars($this->theme) ?>"
 <?php if(strlen($this->backend_url)): ?>
