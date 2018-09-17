@@ -33,6 +33,6 @@ You can choose your preferred service in the backend module or in the content el
 
 **IMPORTANT:**
 
-To use the social media icons in the frontend, you will need to integrate Font Awesome. Just add the CSS from the Bootstrap CDN `//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css` (`<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">`) to your layout. You also have to include jQuery.
+To use the social media icons in the frontend, you will need to integrate Font Awesome. Since v3.x Shariff only supports Font Awesome 5. So just add the CSS `<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">` to your layout. You also have to include jQuery.
 
-For now the installation is just possible via composer. A manual installation will not be working because the requirements will not be resolved.
+For now the installation is just possible via composer. A manual installation will not be working, because the requirements will not be resolved.
