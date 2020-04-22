@@ -3,6 +3,10 @@
 
 ## [Unreleased]
 
+### Fixed
+
+ - Fix missing module name ([#28](https://github.com/hofff/contao-shariff/issues/28))
+
 ### Changed
 
  - Update to shariff - v3.2.1
