@@ -8,7 +8,6 @@ Provides sharing links for:
 
 - Facebook
 - Twitter
-- Google+
 - WhatsApp
 - LinkedIn
 - Xing

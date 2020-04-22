@@ -5,7 +5,6 @@ $GLOBALS['TL_CONFIG']['hofff_shariff_services'][] = 'diaspora';
 $GLOBALS['TL_CONFIG']['hofff_shariff_services'][] = 'facebook';
 $GLOBALS['TL_CONFIG']['hofff_shariff_services'][] = 'flattr';
 $GLOBALS['TL_CONFIG']['hofff_shariff_services'][] = 'flipboard';
-$GLOBALS['TL_CONFIG']['hofff_shariff_services'][] = 'googleplus';
 // $GLOBALS['TL_CONFIG']['hofff_shariff_services'][] = 'info';
 $GLOBALS['TL_CONFIG']['hofff_shariff_services'][] = 'linkedin';
 $GLOBALS['TL_CONFIG']['hofff_shariff_services'][] = 'mail';

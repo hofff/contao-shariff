@@ -5,7 +5,6 @@ $GLOBALS['TL_LANG']['hofff_shariff']['service_options']['diaspora']    = 'diaspo
 $GLOBALS['TL_LANG']['hofff_shariff']['service_options']['facebook']    = 'Facebook';
 $GLOBALS['TL_LANG']['hofff_shariff']['service_options']['flattr']      = 'Flattr';
 $GLOBALS['TL_LANG']['hofff_shariff']['service_options']['flipboard']   = 'Flipboard';
-$GLOBALS['TL_LANG']['hofff_shariff']['service_options']['googleplus']  = 'Google+';
 $GLOBALS['TL_LANG']['hofff_shariff']['service_options']['info']        = 'Info';
 $GLOBALS['TL_LANG']['hofff_shariff']['service_options']['linkedin']    = 'LinkedIn';
 $GLOBALS['TL_LANG']['hofff_shariff']['service_options']['mail']        = 'E-Mail';
