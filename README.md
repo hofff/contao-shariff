@@ -6,13 +6,27 @@ Contao CMS module and content element providing [Shariff](https://github.com/hei
 
 Provides sharing links for:
 
-- Facebook
-- Twitter
-- WhatsApp
+- AddThis
+- diaspora*
+- facebook
+- Flattr
+- Flipboard
 - LinkedIn
-- Xing
+- Mail (via mailto:)
 - Pinterest
-- Email (via mailto:)
+- Print
+- Qzone
+- reddit
+- StumbleUpon
+- Telegram
+- Tencent Weibo
+- Threema
+- Tumblr
+- Twitter
+- VK
+- Weibo
+- WhatsApp
+- XING
 
 You can choose your preferred service in the backend module or in the content element.
 

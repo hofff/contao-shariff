@@ -13,6 +13,18 @@
 	"homepage": "https://hofff.com/",
 	"authors": [
 		{
+			"name": "David Molineus",
+			"email": "david@hofff.com",
+			"homepage": "https://www.hofff.com",
+			"role": "Developer"
+		},
+		{
+			"name": "Nicky Hoff",
+			"email": "nick@hofff.com",
+			"homepage": "https://www.hofff.com",
+			"role": "Manager"
+		},
+		{
 			"name": "Oliver Hoff",
 			"email": "oliver@hofff.com",
 			"homepage": "https://hofff.com/",
