@@ -34,7 +34,7 @@
 	"require": {
 		"php": "^7.1",
 		"contao/core-bundle": "^4.4",
-		"heise/shariff": "^7.0"
+		"heise/shariff": "^9.0"
 	},
 	"require-dev": {
 		"contao/manager-plugin": "^2.0"
