@@ -1,3 +1,5 @@
+**ATTENTION: Please see https://github.com/hofff/contao-shariff/issues/34**
+
 # Shariff – Social media buttons with privacy
 
 Contao CMS module and content element providing [Shariff](https://github.com/heiseonline/shariff). For more information about Shariff, please refer to [heise online](http://www.heise.de/ct/artikel/Shariff-Social-Media-Buttons-mit-Datenschutz-2467514.html).
