@@ -1,4 +1,5 @@
-**ATTENTION: Please see https://github.com/hofff/contao-shariff/issues/34**
+**This repository will not be maintained anymore, because the based repository is not maintained since more than two years. Please see https://github.com/hofff/contao-shariff/issues/34**
+--
 
 # Shariff – Social media buttons with privacy
 
